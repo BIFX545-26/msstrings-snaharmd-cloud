@@ -1,4 +1,5 @@
-AMSstrings\.Rproj\.user$
+^MSstrings\.Rproj\.user$
 ^\.Rproj\.user$
 ^LICENSE\.md$
 ^.*\.Rproj$
+^DESCRIPTION\.dcf$

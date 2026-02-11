@@ -1,11 +1,18 @@
 # parseMSstrings.R
 # utilities for parsing MS strings
 
-#library(Biostrings) # for `AAStringSet` - BiocManager::install('Biostrings')
-#library(dplyr) # for `tibble`
-#library(purrr) # for `map` and `map_chr`
-#library(stringr) # for `str_extract_all`, `str_replace`, `str_replace_all`, and `str_split`
-#library(GenomeInfoDb)
+#' parse_mods
+#' Extract metadata from an annotated peptide sequence from Spectronaut
+#' 
+#' @param seqs A character vector of peptide sequences
+#' @param format A character value specifying the format of our seqs (not currently implemented - function expects Spectronaut format for now)
+#' 
+#' @returns A protein_mods object with processed sequences
+#' @export
+#' @importFrom Biostrings AAStringSet
+#' @importFrom dplyr tibble
+#' @importFrom purrr map map_chr
+#' @importFrom stringr str_extract_all str_replace str_replace_all str_split
 parse_mods <- function(seqs, format = 'Spectronaut')
 {
   # remove '_'
