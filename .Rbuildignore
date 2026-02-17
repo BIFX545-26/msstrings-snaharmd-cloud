@@ -3,3 +3,5 @@
 ^LICENSE\.md$
 ^.*\.Rproj$
 ^DESCRIPTION\.dcf$
+
+^data-raw$
